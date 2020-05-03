@@ -1,0 +1,9 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+
+ol {
+    list-style: decimal !important;
+}
+/* purgecss end ignore */
+@tailwind utilities;
