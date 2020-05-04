@@ -11,5 +11,6 @@ ol {
   border-left: 0.2em solid rgba(0, 0, 0, 0.4);
   font-weight: lighter;
 }
+
 /* purgecss end ignore */
 @tailwind utilities;
