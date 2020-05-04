@@ -37,6 +37,9 @@ export default class Comments extends React.Component {
     render() {
         const isLoading = this.state.isLoading
         const hasData = !!(this.state.data && this.state.data.length)
+        const githubUser = this.props.githubUser
+        const githubRepo = this.props.githubRepo
+        const issueId = this.props.issueId
         return (
             <>
                 <hr className="mb-5" />
@@ -56,7 +59,7 @@ export default class Comments extends React.Component {
                     ))
                 )}
                 
-                <LinkButton text="Добавить комментарий" link="https://github.com/JustAddAcid/JustAddAcid.github.io/issues/1" />
+                <LinkButton text="Добавить комментарий" link={`https://github.com/${githubUser}/${githubRepo}/issues/${issueId}`} />
             </>
         )
     }

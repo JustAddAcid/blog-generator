@@ -8,7 +8,7 @@ import Layout from '../../components/layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
 import Head from 'next/head'
-import { CMS_NAME } from '../../lib/constants'
+// import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 import Comments from '../../components/comments'
 
@@ -39,7 +39,8 @@ export default function Post({ post, morePosts, preview }) {
                 <PostBody content={post.content} />
               </article>
               <article className="mb-32 max-w-2xl mx-auto">
-                <Comments githubUser="JustAddAcid"
+                <Comments 
+                  githubUser="JustAddAcid"
                   githubRepo="JustAddAcid.github.io"
                   issueId={post.issueId} />
               </article>

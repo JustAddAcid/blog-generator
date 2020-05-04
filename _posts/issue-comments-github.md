@@ -40,10 +40,74 @@ ogImage:
 
 ### Реализация
 
+Польскольку я храню все посты на этом сайте в markdown файлах, мне первым делом нужно запомнить, что при создании файла, в метаданных я теперь буду обязан указывать issue id.
+
 ```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
+{
+    title: 'Первый пост с использованием markdown и next js'
+    excerpt: 'А заодно и проверка возможности писать на кириллице в этом шаблонизаторе. Если вы читаете этот текст, значит полет нормальный.'
+    coverImage: '/assets/blog/hello-world/завтра_будет_лучше.jpg'
+    date: '2020-05-03T21:00:07.322Z'
+    issueId: '1' // <--- id созданного issue на GitHub
+} 
+```
+В конец страницы с постом добавлен React-компонент Comments, который будет отображать комментарии из ГитХаба. 
+
+```html
+    <article>
+        <Comments 
+            githubUser="JustAddAcid"
+            githubRepo="JustAddAcid.github.io"
+            issueId={post.issueId} />
+    </article>
 ```
 
+Внутри компонента **Comments** делаем GET-запрос в https://api.github.com/repos/${githubUser}/${githubRepo}/issues/${issueId}/comments. Например, для коммментариев к этой странице, это будет:
+
+(https://api.github.com/repos/JustAddAcid/JustAddAcid.github.io/issues/2/comments)
+
+```javascript
+componentDidMount() {
+    if (!this.state.data) {
+        const githubUser = this.props.githubUser
+        const githubRepo = this.props.githubRepo
+        const issueId = this.props.issueId
+
+        const that = this;
+        window.fetch(`https://api.github.com/repos/${githubUser}/${githubRepo}/issues/${issueId}/comments`, {
+            headers: {
+                Accept: 'application/vnd.github.v3.html+json'
+            }
+        })
+            .then(response => response.json())
+            .then(comments => that.setState({
+                data: comments,
+                isLoading: false
+            }))
+```
+
+Ну и красиво рендерим JSON-array, который нам пришел из гитхаба
+
+```javascript
+    render(){
+        // ....
+        {hasData && (
+            this.state.data.map(comment => (
+                <Comment
+                    key={comment.id}
+                    avatarUrl={comment.user.avatar_url}
+                    userProfileUrl={comment.user.html_url}
+                    userLogin={comment.user.login}
+                    commentDate={comment.created_at}
+                    commentBody={comment.body_html} />
+            ))
+        )}
+        <LinkButton text="Добавить комментарий" link={`https://github.com/${githubUser}/${githubRepo}/issues/${issueId}`} />
+    }
+```
+
+После причесывания стилей -- получаем достаточно минималистичную и приятную на глаз систему комментариев с поддержкой markdown, цитирования и т.д., которой можно воспользоваться внизу страницы.
+
+<iframe src="//coub.com/embed/8mnh8?muted=false&autostart=false&originalSize=false&startWithHD=false" allowfullscreen frameborder="0" width="640" height="360" allow="autoplay"></iframe>
 
 Ещё увидимся.
