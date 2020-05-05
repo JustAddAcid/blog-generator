@@ -19,8 +19,7 @@ const createIssue = async name => {
         method: 'post',
         body: JSON.stringify({
             title: 'Comments: ' + name,
-            body: postPrefix + name,
-
+            body: postPrefix + name
         }),
         headers: {
             'Accept' : 'application/vnd.github.v3.html+json',
@@ -33,7 +32,9 @@ const createIssue = async name => {
 }
 
 const main = async () => {
+
     const filesInDir = fs.readdirSync(postsDir)
+    
     for (const fileName of filesInDir){
         const filePath = postsDir + '/' + fileName,
               fileText = fs.readFileSync(filePath).toString(),
