@@ -19,6 +19,11 @@ jobs:
       - deploy:
           name: Deploy
           command: |
+            npm run issues
+            git add -A
+            git commit -m "Automated issues creation: ${CIRCLE_SHA1}"
+            git push
+
             npm run build
 
             git config --global user.email $GH_EMAIL
@@ -34,7 +39,7 @@ jobs:
             npm run export
             /bin/cp ./out/* ./targetDirectory/ -R -f
             cd ./targetDirectory/
-            echo "try to commit in dir $PWD into $TARGET_REPO_URL repo"
+            echo "commit in dir $PWD into $TARGET_REPO_URL repo"
             git add -A
             git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}" --allow-empty
             git push
