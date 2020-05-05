@@ -24,13 +24,18 @@ jobs:
             git config --global user.email $GH_EMAIL
             git config --global user.name $CIRCLE_USERNAME
             git clone $TARGET_REPO_URL targetDirectory
-            rm -rf ./targetDirectory/_next
-            rm -rf ./targetDirectory/assets
-            rm -rf ./targetDirectory/favicon
-            rm -rf ./targetDirectory/posts
+            sleep 1
+            cd ./targetDirectory/
+            rm -rf ./_next
+            rm -rf ./assets
+            rm -rf ./favicon
+            rm -rf ./posts
+            cd ..
             npm run export
+            sleep 1
             yes | cp ./out/* ./targetDirectory/ -R -i -v
-            cd targetDirectory
+            cd ./targetDirectory/
+            sleep 5
             git add -A
             git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}" --allow-empty
             git push origin $TARGET_BRANCH

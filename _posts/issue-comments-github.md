@@ -62,9 +62,9 @@ ogImage:
     </article>
 ```
 
-Внутри компонента **Comments** делаем GET-запрос в https://api.github.com/repos/${githubUser}/${githubRepo}/issues/${issueId}/comments. Например, для коммментариев к этой странице, это будет:
+Внутри компонента **Comments** делаем GET-запрос в https://api.github.com/repos/ ${githubUser}/ ${githubRepo}/issues/ ${issueId}/comments. Например, для коммментариев к этой странице, это будет:
 
-(https://api.github.com/repos/JustAddAcid/JustAddAcid.github.io/issues/2/comments)
+(https://api.github.com/repos/ JustAddAcid/JustAddAcid.github.io/ issues/2/comments)
 
 ```javascript
 componentDidMount() {
