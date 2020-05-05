@@ -23,10 +23,14 @@ jobs:
             git config --global user.name $CIRCLE_USERNAME
 
             npm run issues
-            git add -A
-            git commit -m "Automated issues creation: ${CIRCLE_SHA1}"
-            git push
-
+            if [[ `git status --porcelain` ]]; then
+              git add -A
+              git commit -m "Automated issues creation: ${CIRCLE_SHA1}"
+              git push
+              echo "Pushed changes in current repo. Deploy in next task"
+              return 0
+            fi
+            
             npm run build
 
             git clone $TARGET_REPO_URL targetDirectory
