@@ -24,18 +24,18 @@ jobs:
             git config --global user.email $GH_EMAIL
             git config --global user.name $CIRCLE_USERNAME
             git clone $TARGET_REPO_URL targetDirectory
-            sleep 1
             cd ./targetDirectory/
             rm -rf ./_next
             rm -rf ./assets
             rm -rf ./favicon
             rm -rf ./posts
+            echo "deleting folders from $PWD"
             cd ..
             npm run export
             sleep 1
-            yes | cp ./out/* ./targetDirectory/ -R -i -v
+            yes | cp ./out/* ./targetDirectory/ -R -i -v > /dev/null 2> /dev/null
             cd ./targetDirectory/
-            sleep 5
+            echo "try to commit in dir $PWD into $TARGET_REPO_URL repo"
             git add -A
             git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}" --allow-empty
-            git push origin $TARGET_BRANCH
+            git push
