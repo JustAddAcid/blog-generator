@@ -32,7 +32,7 @@ jobs:
             echo "deleting folders from $PWD"
             cd ..
             npm run export
-            yes | cp ./out/* ./targetDirectory/ -R -i -v > /dev/null 2> /dev/null
+            /bin/cp ./out/* ./targetDirectory/ -R -f
             cd ./targetDirectory/
             echo "try to commit in dir $PWD into $TARGET_REPO_URL repo"
             git add -A
