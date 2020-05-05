@@ -32,7 +32,6 @@ jobs:
             echo "deleting folders from $PWD"
             cd ..
             npm run export
-            sleep 1
             yes | cp ./out/* ./targetDirectory/ -R -i -v > /dev/null 2> /dev/null
             cd ./targetDirectory/
             echo "try to commit in dir $PWD into $TARGET_REPO_URL repo"
