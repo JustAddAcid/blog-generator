@@ -28,7 +28,7 @@ jobs:
               git commit -m "Automated issues creation: ${CIRCLE_SHA1}"
               git push
               echo "Pushed changes in current repo. Deploy in next task"
-              return 0
+              circleci-agent step halt
             fi
             
             npm run build

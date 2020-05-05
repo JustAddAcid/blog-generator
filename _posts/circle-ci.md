@@ -101,7 +101,7 @@ const createIssue = async name => {
 
 Но для начала нужно примерно представить, какие действия (shell-команды) нам всё-таки нужно проделать. У меня получилось как-то так:
 
-```bash
+```sh
 # Представляемся гиту
 git config --global user.email $GH_EMAIL
 git config --global user.name $CIRCLE_USERNAME
@@ -115,7 +115,7 @@ if [[ `git status --porcelain` ]]; then
   git commit -m "Automated issues creation: ${CIRCLE_SHA1}"
   git push
   echo "Pushed changes in current repo. Deploy in next task"
-  return 0
+  circleci-agent step halt
 fi
 
 npm run build
