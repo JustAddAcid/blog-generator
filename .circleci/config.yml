@@ -20,6 +20,7 @@ jobs:
           name: Deploy
           command: |
             npm run build
+            
             git config --global user.email $GH_EMAIL
             git config --global user.name $CIRCLE_USERNAME
             git clone $TARGET_REPO_URL out
