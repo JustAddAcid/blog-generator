@@ -108,6 +108,4 @@ componentDidMount() {
 
 После причесывания стилей -- получаем достаточно минималистичную и приятную на глаз систему комментариев с поддержкой markdown, цитирования и т.д., которой можно воспользоваться внизу страницы.
 
-<iframe src="//coub.com/embed/8mnh8?muted=false&autostart=false&originalSize=false&startWithHD=false" allowfullscreen frameborder="0" width="640" height="360" allow="autoplay"></iframe>
-
 Ещё увидимся.
