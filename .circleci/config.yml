@@ -20,16 +20,17 @@ jobs:
           name: Deploy
           command: |
             npm run build
-            
+
             git config --global user.email $GH_EMAIL
             git config --global user.name $CIRCLE_USERNAME
-            git clone $TARGET_REPO_URL out
-            rm -rf /out/_next
-            rm -rf /out/assets
-            rm -rf /out/favicon
-            rm -rf /out/posts
+            git clone $TARGET_REPO_URL targetDirectory
+            rm -rf ./targetDirectory/_next
+            rm -rf ./targetDirectory/assets
+            rm -rf ./targetDirectory/favicon
+            rm -rf ./targetDirectory/posts
             npm run export
-            cd out
+            yes | cp ./out/* ./targetDirectory/ -R -i -v
+            cd targetDirectory
             git add -A
             git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}" --allow-empty
             git push origin $TARGET_BRANCH
