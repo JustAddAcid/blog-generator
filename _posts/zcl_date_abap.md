@@ -3,7 +3,7 @@ title: 'Класс для удобного манипулирования дат
 excerpt: 'Надоело страдать с парсингом стандартных типов даты в abap и использовать громоздкие функциональные модули. Написал класс для выполнения рутинных действий в удобном API'
 coverImage: '/assets/blog/zcl_date_abap/cover.png'
 date: '2020-05-24T14:15:07.322Z'
-issueId: '%%ISSUE_ID%%'
+issueId: '8'
 author:
   name: Roman A. Nosov
   picture: '/assets/blog/authors/romannosov.png'
