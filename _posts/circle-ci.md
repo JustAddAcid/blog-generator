@@ -31,7 +31,8 @@ ogImage:
 ## Реализация -- скрипт проверки и привязки issue
 В package.json объявим скрипт issues, который запускает файл issues.mjs из корня. 
 
-```json
+```javascript
+{
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -39,6 +40,7 @@ ogImage:
     "export": "next export",
     "issues": "node issues.mjs" //  <--- 
   }
+}
 ```
 В issues.mjs следующая логика: во всех файлах с постами скрипт ищет подстроку %%ISSUЕ_ID%%. И если находит, то создаёт новое GitHub Issue, а его ID подставляет вместо %%ISSUЕ_ID%%.
 ```javascript
@@ -101,7 +103,7 @@ const createIssue = async name => {
 
 Но для начала нужно примерно представить, какие действия (shell-команды) нам всё-таки нужно проделать. У меня получилось как-то так:
 
-```sh
+```bash
 # Представляемся гиту
 git config --global user.email $GH_EMAIL
 git config --global user.name $CIRCLE_USERNAME
