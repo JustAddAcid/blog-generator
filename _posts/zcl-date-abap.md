@@ -71,7 +71,7 @@ write lv_dats. " Искомое 15 марта
 Но вы точно хотите использовать в своих программах вот такие уродливые конструкции?
 
 Отдельным пунктиком следует упомянуть про развлечения программистов с красивым форматированием даты. Огромные полотна кода с выдёргиваниями подстрок из даты, и конкатенации в нормальном виде.
-https://www.erpworkbench.com/abap/date/date_format.htm <- пример
+[Пример](https://www.erpworkbench.com/abap/date/date_format.htm "Formatting SAP date field using ABAP")
 
 А если очень хочется вместо номера месяца видеть его название? Май, апрель....
 
@@ -236,7 +236,7 @@ https://www.erpworkbench.com/abap/date/date_format.htm <- пример
 
 Осталось прикрутить геттеры/сеттеры. и доработать API.
 
-Что в итоге получилось -- можно посмотреть здесь: https://github.com/JustAddAcid/abap_date/
+Что в итоге получилось -- можно посмотреть здесь: [github.com/JustAddAcid/abap_date](https://github.com/JustAddAcid/abap_date/ "Класс для удобного использования даты в abap")
 
 ## Результаты
 
