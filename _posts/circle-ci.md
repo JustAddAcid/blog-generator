@@ -87,6 +87,9 @@ const createIssue = async name => {
     return createdIssue.number.toString();
 }
 ```
+
+*В примере выше для авторизации на GitHub использоуется basic auth header, который сейчас является **deprecated**. Такая возможность авторизовываться будет **удалена** в ноябре 2020. [Больше информации здесь.](https://developer.github.com/changes/2020-02-14-deprecating-password-auth/ "Deprecating password authentication")*
+
 Теперь мне нужно запомнить, что всегда, когда я хочу, чтобы система автоматически создала issue, нужно вместо ID созданной руками issue писать директиву %%ISSUЕ_ID%%
 ```javascript
 {
