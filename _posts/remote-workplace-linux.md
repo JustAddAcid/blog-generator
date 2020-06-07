@@ -3,7 +3,7 @@ title: 'Организуем удалённое рабочее место на �
 excerpt: 'На фоне эпидемии появилась необходимость в организации удобной удалённой работы на домашнем компьютере с ос linux на борту: настроить нормальный rdp клиент + skype for business (lync)'
 coverImage: '/assets/blog/remote-workplace-linux/logo.jpg'
 date: '2020-06-07T14:15:07.322Z'
-issueId: '%%ISSUE_ID%%'
+issueId: '9'
 author:
   name: Roman A. Nosov
   picture: '/assets/blog/authors/romannosov.png'
