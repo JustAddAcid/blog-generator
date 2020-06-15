@@ -3,7 +3,7 @@ title: 'Управление состоянием web-приложения, ил
 excerpt: 'Решил описать то, как можно удобно хранить состояния экранов (или всего приложения) внутри SAPUI5 и заниматься реактивностью (Почти как у больших и нормальных фреймворков)'
 coverImage: '/assets/blog/sapui5-state/cover.jpg'
 date: '2020-05-24T14:15:07.322Z'
-issueId: '%%ISSUE_ID%%'
+issueId: '10'
 author:
   name: Roman A. Nosov
   picture: '/assets/blog/authors/romannosov.png'
