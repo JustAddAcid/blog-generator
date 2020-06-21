@@ -157,6 +157,21 @@ ID заметки будем передавать в data-* аттрибуте. 
 
 ![Запускаем -- работает](/assets/blog/sapui5-state/basic-todo.png)
 
+В представленном варианте: в модели *viewState* будет храниться объект со следующим содержанием:
+
+```javascript
+{
+    input: ""
+    todos: {
+        { id: "1592739272730", text: "Раз", checked: false }
+        { id: "1592739273593", text: "Два", checked: true }
+        { id: "1592739274600", text: "Три", checked: false }
+        { id: "1592739276362", text: "Четыре", checked: true }
+        { id: "1592739277545", text: "Пять", checked: false }
+    }
+}
+```
+
 [((Репо с кодом))](https://github.com/JustAddAcid/sapui5-todo)
 
 Продолжение следует.
