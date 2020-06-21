@@ -1,5 +1,5 @@
 ---
-title: 'Как запилить рективность на SAPUI5 -- часть 2'
+title: 'Как запилить реактивность на SAPUI5 -- часть 2'
 excerpt: 'Expression binding & viewstate change handling'
 coverImage: '/assets/blog/sapui5-state-part2/background.jpg'
 date: '2020-06-21T14:15:07.322Z'
