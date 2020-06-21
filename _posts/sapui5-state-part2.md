@@ -3,7 +3,7 @@ title: 'Как запилить рективность на SAPUI5 -- часть
 excerpt: 'Expression binding & viewstate change handling'
 coverImage: '/assets/blog/sapui5-state/cover.jpg'
 date: '2020-06-21T14:15:07.322Z'
-issueId: '%%ISSUE_ID%%'
+issueId: '11'
 author:
   name: Roman A. Nosov
   picture: '/assets/blog/authors/romannosov.png'
