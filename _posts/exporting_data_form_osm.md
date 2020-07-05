@@ -58,25 +58,25 @@ ogImage:
 
 Теперь посмотрим, как она выглядит в данных:
 ```xml
-    <node id="1377619868" lat="59.8057985" lon="30.3884693" version="9" timestamp="2019-05-08T05:34:15Z" changeset="70007449" uid="474169" user="Yevgeny Gromov">
-        <tag k="esr:user" v="033004"/>
-        <tag k="name" v="Шушары"/>
-        <tag k="railway" v="station"/>
-        <tag k="uic_ref" v="2005166"/>
-        <tag k="wikidata" v="Q4528146"/>
-        <tag k="wikipedia" v="ru:Шушары (станция)"/>
-    </node>
+<node id="1377619868" lat="59.8057985" lon="30.3884693" version="9" timestamp="2019-05-08T05:34:15Z" changeset="70007449" uid="474169" user="Yevgeny Gromov">
+    <tag k="esr:user" v="033004"/>
+    <tag k="name" v="Шушары"/>
+    <tag k="railway" v="station"/>
+    <tag k="uic_ref" v="2005166"/>
+    <tag k="wikidata" v="Q4528146"/>
+    <tag k="wikipedia" v="ru:Шушары (станция)"/>
+</node>
 ```
 
 Данные хранятся в виде
 ```xml
- <tag k="key" v="value"> 
+<tag k="key" v="value"> 
 ```
 внутри нашей точки *"Шушары"*. А координаты хранятся в атрибутах самого тега "node" (lat/lon).
 
 Замечаем, что признак "железнодорожная станция" -- это вот такой тэг. На него и будем ориентироваться, когда будем фильтровать данные:
 ```xml
-    <tag k="railway" v="station"/>
+<tag k="railway" v="station"/>
 ```
 
 Окей, мы поняли структуру, поняли что нам надо. Но где данные, Лебовски?
@@ -125,31 +125,31 @@ osmfilter RU.o5m --keep="railway=station" > stations.osm
 И тут натыкаемся на станцию метро "Озерки". Что ж, формально -- это жд, и формально -- станция. Но не совсем то, что мне нужно. :)
 
 ```xml
-    <node id="96459081" lat="60.0354511" lon="30.3210663" version="24" timestamp="2020-01-08T22:53:32Z" changeset="79358758" uid="217225" user="&#38;ergio">
-        <tag k="colour" v="blue"/>
-        <tag k="layer" v="-5"/>
-        <tag k="name" v="Озерки"/>
-        <tag k="name:de" v="Oserki"/>
-        <tag k="name:en" v="Ozerki"/>
-        <tag k="name:fi" v="Ozerki"/>
-        <tag k="name:ru" v="Озерки"/>
-        <tag k="network" v="Петербургский метрополитен"/>
-        <tag k="operator" v="Петербургский метрополитен"/>
-        <tag k="public_transport" v="station"/>
-        <tag k="railway" v="station"/>
-        <tag k="station" v="subway"/>
-        <tag k="subway" v="yes"/>
-        <tag k="transport" v="subway"/>
-        <tag k="wikidata" v="Q2241386"/>
-        <tag k="wikipedia" v="ru:Озерки (станция метро)"/>
-    </node>
+<node id="96459081" lat="60.0354511" lon="30.3210663" version="24" timestamp="2020-01-08T22:53:32Z" changeset="79358758" uid="217225" user="&#38;ergio">
+    <tag k="colour" v="blue"/>
+    <tag k="layer" v="-5"/>
+    <tag k="name" v="Озерки"/>
+    <tag k="name:de" v="Oserki"/>
+    <tag k="name:en" v="Ozerki"/>
+    <tag k="name:fi" v="Ozerki"/>
+    <tag k="name:ru" v="Озерки"/>
+    <tag k="network" v="Петербургский метрополитен"/>
+    <tag k="operator" v="Петербургский метрополитен"/>
+    <tag k="public_transport" v="station"/>
+    <tag k="railway" v="station"/>
+    <tag k="station" v="subway"/>
+    <tag k="subway" v="yes"/>
+    <tag k="transport" v="subway"/>
+    <tag k="wikidata" v="Q2241386"/>
+    <tag k="wikipedia" v="ru:Озерки (станция метро)"/>
+</node>
 ```
 
 Видим там целых три тега, которые свидетельствуют о том, что это метро. (зачем такая избыточность?)
 ```xml
-    <tag k="station" v="subway"/>
-    <tag k="subway" v="yes"/>
-    <tag k="transport" v="subway"/>
+<tag k="station" v="subway"/>
+<tag k="subway" v="yes"/>
+<tag k="transport" v="subway"/>
 ```
 Фильтруем по этим тегам:
 ```bash
