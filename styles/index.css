@@ -13,5 +13,10 @@ ol {
   font-weight: lighter;
 }
 
+.screenreader{
+  position: absolute;
+  left:-9999px;
+}
+
 /* purgecss end ignore */
 @tailwind utilities;

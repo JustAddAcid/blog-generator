@@ -1,5 +1,6 @@
 ---
 title: 'Использование issues в GitHub как движок комментариев'
+titleEnabled: false
 excerpt: 'Хочу поделиться замечательной идеей: превращения GitHub issues в полноценный движок комментариев для статического блога. Достойная легковесная (и бесплатная!) замена disqus и аналогов.'
 coverImage: '/assets/blog/issue-comments-github/cover.png'
 date: '2020-05-04T14:15:07.322Z'
