@@ -3,7 +3,7 @@ title: 'Экспортируем нужные нам данные из openStree
 excerpt: 'Иногда возникает ситуация, в которой нам жизненно необходимо получить структурированные геоданные для своих проектов. Можно, конечно, долго собирать данные руками, а можно обратиться к прекрасным открытым базам данных.'
 coverImage: '/assets/blog/exporting_data_form_osm/background.jpg'
 date: '2020-07-05T14:15:07.322Z'
-issueId: '%%ISSUE_ID%%'
+issueId: '12'
 author:
   name: Roman A. Nosov
   picture: '/assets/blog/authors/romannosov.png'
