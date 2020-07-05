@@ -18,12 +18,12 @@ ogImage:
 **Для бородатых админов:** я не большой спец в CI, так что, если код будет не совсем согласован с общепринятыми Best-Practice, то прошу меня извинить и прошу написать в комментариях о том, как это сделать лучше и безопасней.
 
 ## Автоматизировали, автоматизировали, да не выавтоматизировали
-![If you never deploy, your deploy never fals](/assets/blog/circleci/meme.jpeg)
+![If you never deploy, your deploy never falls](/assets/blog/circleci/meme.jpeg)
 
 Итак, поехали. Для начала, нужно определиться, что за нас должна делать шайтан-машина. 
 Предварительный алгоритм:
 
-1. Скрипт проверяет все .md файлы с постами на предмет того, созданна ли для него issue на GitHub (для реализации комментариев, [о которых здесь](/posts/issue-comments-github))
+1. Скрипт проверяет все .md файлы с постами на предмет того, создана ли для него issue на GitHub (для реализации комментариев, [о которых здесь](/posts/issue-comments-github))
 2. Если к .md файлу не привязана issue, то создать, и записать в файл issue id. Сделать коммит и пуш
 3. Сделать билд в статический html
 4. Положить файлы билда в репозиторий с github pages (JustAddAcid.github.io). Сделать коммит и пуш
@@ -88,7 +88,7 @@ const createIssue = async name => {
 }
 ```
 
-*В примере выше для авторизации на GitHub использоуется basic auth header, который сейчас является **deprecated**. Такая возможность авторизовываться будет **удалена** в ноябре 2020. [Больше информации здесь.](https://developer.github.com/changes/2020-02-14-deprecating-password-auth/ "Deprecating password authentication")*
+*В примере выше для авторизации на GitHub используется basic auth header, который сейчас является **deprecated**. Такая возможность авторизоваться будет **удалена** в ноябре 2020. [Больше информации здесь.](https://developer.github.com/changes/2020-02-14-deprecating-password-auth/ "Deprecating password authentication")*
 
 Теперь мне нужно запомнить, что всегда, когда я хочу, чтобы система автоматически создала issue, нужно вместо ID созданной руками issue писать директиву %%ISSUЕ_ID%%
 ```javascript
@@ -96,7 +96,7 @@ const createIssue = async name => {
     excerpt: 'С хостингом и комментариями немного разобрались. Теперь заставим нашу шайтан-машину пересобирать сайт, если в .md шаблонах произошли какие-то изменения'
     coverImage: '/assets/blog/circleci/cover.png'
     date: '2020-05-05T16:12:07.322Z'
-    ssueId: '%%ISSUЕ_ID%%'
+    issueId: '%%ISSUЕ_ID%%'
 }
 ```
 

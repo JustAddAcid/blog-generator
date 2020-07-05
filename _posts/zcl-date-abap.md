@@ -79,7 +79,7 @@ write lv_dats. " Искомое 15 марта
 Огромные просторы для танцев с бубном и изобретаний велосипедов!
 
 ## Z* разработки в SAP -- бесконечная фабрика велосипедов
-![worst proramming language](/assets/blog/zcl_date_abap/meme.jpg)
+![worst programming language](/assets/blog/zcl_date_abap/meme.jpg)
 
 Итак, нам нужен класс, который мог инкапсулировать в себе стандартный dats, но предоставлять удобный *API* для работы с датами, максимально скрывая уродливость языка *ABAP*.
 

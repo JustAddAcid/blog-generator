@@ -40,7 +40,7 @@ ogImage:
 
 ### Реализация
 
-Польскольку я храню все посты на этом сайте в markdown файлах, мне первым делом нужно запомнить, что при создании файла, в метаданных я теперь буду обязан указывать issue id.
+Поскольку я храню все посты на этом сайте в markdown файлах, мне первым делом нужно запомнить, что при создании файла, в метаданных я теперь буду обязан указывать issue id.
 
 ```javascript
 {
@@ -62,7 +62,7 @@ ogImage:
     </article>
 ```
 
-Внутри компонента **Comments** делаем GET-запрос в https://api.github.com/repos/ ${githubUser}/ ${githubRepo}/issues/ ${issueId}/comments. Например, для коммментариев к этой странице, это будет:
+Внутри компонента **Comments** делаем GET-запрос в https://api.github.com/repos/ ${githubUser}/ ${githubRepo}/issues/ ${issueId}/comments. Например, для комментариев к этой странице, это будет:
 
 (https://api.github.com/repos/ JustAddAcid/JustAddAcid.github.io/ issues/2/comments)
 
