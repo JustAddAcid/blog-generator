@@ -4,6 +4,7 @@
 
 ol {
     list-style: decimal !important;
+    margin-left: 25px;
 }
 
 .comment-card blockquote {
