@@ -2,7 +2,7 @@
   @apply text-lg leading-relaxed;
 }
 
-.markdown a:hover {
+.markdown a {
   @apply .underline;
 }
 

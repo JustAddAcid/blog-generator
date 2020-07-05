@@ -24,7 +24,7 @@ ogImage:
 
 Для вытаскивания небольших данных из *OSM* есть онлайновый инструмент, который позволяет делать запросы и получать результат в *JSON*.
 
-Но лично для меня этот язык запросов выглядит слишком перегруженным и сложным + этот инструмент работает до невозможности медленно. [(overpass-turbo)](https://overpass-turbo.eu/)
+Но лично для меня этот язык запросов выглядит слишком перегруженным и сложным + этот инструмент работает до невозможности медленно. [overpass-turbo](https://overpass-turbo.eu/)
 
 Но можно пойти куда **более простым и понятным** путём:
 
@@ -35,8 +35,8 @@ ogImage:
 ## Небольшая вставка теории:
 Чтобы придумать, как вытащить железнодорожные станции, нужно понимать, какие данные и с какой структурой там в принципе есть. 
 
-Есть очень хорошая [(вводная статья на хабре)](https://habr.com/ru/post/146503/).<br>
-А также имеется [(официальная дока)](https://wiki.openstreetmap.org/wiki/Map_Features).
+Есть очень хорошая [вводная статья на хабре](https://habr.com/ru/post/146503/).<br>
+А также имеется [официальная дока](https://wiki.openstreetmap.org/wiki/Map_Features).
 
 **Если кратко:**
 
@@ -83,9 +83,9 @@ ogImage:
 ![Ваши данные будут храниться здесь](/assets/blog/exporting_data_form_osm/meme%20data.jpg)
 
 ## Добываем данные
-Если у вас достаточно свободного пространства на жестком диске -- можете попробовать выкачать весь мир [(по официальным инструкциям)](https://wiki.openstreetmap.org/wiki/Downloading_data).
+Если у вас достаточно свободного пространства на жестком диске -- можете попробовать выкачать весь мир [по официальным инструкциям](https://wiki.openstreetmap.org/wiki/Downloading_data).
 
-Либо можно зайти на сайт [(openStreetMap)](https://www.openstreetmap.org/), открыть на карте нужный квадрат и нажать на "Экспорт".
+Либо можно зайти на сайт [openStreetMap](https://www.openstreetmap.org/), открыть на карте нужный квадрат и нажать на "Экспорт".
 
 ### У России другой путь
 **Проблема России в том**, что она достаточно большая, чтобы экспорт в интерфейсе *openStreetMap* **падал** из-за слишком большого количества данных, но всё ещё достаточно маленькая, чтобы ради неё выкачивать весь мир!
@@ -104,7 +104,7 @@ ogImage:
 ```bash
 sudo apt install osmctools
 ```
-Для остальных *ОС* имеются ссылки на бинарники на официальной wiki [(Osmfilter)](https://wiki.openstreetmap.org/wiki/Osmfilter) [(Osmconvert)](https://wiki.openstreetmap.org/wiki/Osmconvert).
+Для остальных *ОС* имеются ссылки на бинарники на официальной wiki [Osmfilter](https://wiki.openstreetmap.org/wiki/Osmfilter) [Osmconvert](https://wiki.openstreetmap.org/wiki/Osmconvert).
 
 Во-первых, нам нужно распаковать скачанный файл **.pbf** в пригодный для фильтрации формат.
 ```bash
@@ -158,7 +158,7 @@ osmfilter stations.osm --drop="station=subway or subway=yes or transport=subway"
 Смотрим на выходной файл -- выглядит так, словно успешно отфильтровали. Теперь осталось превратить xml файл в CSV, чтобы удобно залить в базу.
 
 Смотрим на документацию по станциям и составляем список тегов, которые будем выводить в CSV:
-[(railway:stations)](https://wiki.openstreetmap.org/wiki/RU:Tag:railway%3Dstation)
+[railway:stations](https://wiki.openstreetmap.org/wiki/RU:Tag:railway%3Dstation)
 
 **Нужные нам столбцы:** 
 
