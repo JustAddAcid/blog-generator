@@ -182,3 +182,5 @@ osmconvert not_subway.osm --all-to-nodes --csv="@id @lat @lon name uic_ref esr:u
 P.S. Мистическим образом, под железнодорожные станции ещё мимикрирует Волгоградский метротрам. Но его уже можно отфильтровать в итоговом CSV :)
 
 <iframe frameborder="0" style="border:none;width:100%;height:180px;" width="100%" height="180" src="https://music.yandex.ru/iframe/#track/31840941/3867842">Слушайте <a href='https://music.yandex.ru/album/3867842/track/31840941'>У трамвая жизнь кривая. норвежская свекла</a> — <a href='https://music.yandex.ru/artist/3976133'>Ремонт Воды</a> на Яндекс.Музыке</iframe>
+
+[Итоговый CSV файл со станциями здесь.](/assets/blog/exporting_data_form_osm/stations.csv)
