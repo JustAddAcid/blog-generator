@@ -1,14 +1,31 @@
 {
     "cSpell.ignoreWords": [
+        "abap'",
+        "abap'еров",
+        "datatypes",
+        "dd",
+        "dd l domname",
+        "dd l fieldname",
+        "dd l rollname",
+        "dd l tabclass",
+        "dd l tabname",
+        "domname",
         "ergio",
+        "fieldname",
         "geofabrik",
+        "ir",
+        "ir datatypes",
+        "l",
         "needgeo",
         "oserki",
         "osmconvert",
         "osmctools",
         "osmfilter",
         "ozerki",
+        "rollname",
         "shushary",
+        "tabclass",
+        "tabname",
         "выавтоматизировали"
     ]
 }
