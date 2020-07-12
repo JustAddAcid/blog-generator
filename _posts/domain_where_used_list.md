@@ -4,7 +4,7 @@ titleEnabled: false
 excerpt: 'Пишем удобную утилиту, которая позволит найти, в каких таблицах БД используется выбранный домен и вычислить количество в них строк'
 coverImage: '/assets/blog/domain_where_used_list/background.jpg'
 date: '2020-07-12T14:15:07.322Z'
-issueId: '%%ISSUE_ID%%'
+issueId: '13'
 author:
   name: Roman A. Nosov
   picture: '/assets/blog/authors/romannosov.png'
