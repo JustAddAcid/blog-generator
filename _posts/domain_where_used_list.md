@@ -101,7 +101,7 @@ from (select top 1 *
 ```abap
 LOOP AT lt_tables ASSIGNING <ls_table>.
   SELECT SINGLE *
-    FROM (<ls_unique_table>-tabname)
+    FROM (<ls_table>-tabname)
     INTO " ...
   " Так, стоп. А куда присваивать значение?
   " [ .... ]
