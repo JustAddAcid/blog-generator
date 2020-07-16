@@ -77,7 +77,7 @@ SELECT DISTINCT dd03l~domname dd03l~rollname dd03l~fieldname
 ```abap
 LOOP AT lt_tables ASSIGNING <ls_table>.
   SELECT SINGLE COUNT(*)
-    FROM (<ls_unique_table>-tabname)
+    FROM (<ls_table>-tabname)
     INTO lv_records_count.
 
   " [ .... ]
