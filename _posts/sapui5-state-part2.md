@@ -1,15 +1,15 @@
 ---
 title: 'Как запилить реактивность на SAPUI5 -- часть 2'
-titleEnabled: true
+titleEnabled: false
 excerpt: 'Expression binding & viewstate change handling'
-coverImage: '/assets/blog/sapui5-state-part2/background.jpg'
+coverImage: '/assets/blog/sapui5-state-part2/backgroundWithHeader.png'
 date: '2020-06-21T14:15:07.322Z'
 issueId: '11'
 author:
   name: Roman A. Nosov
   picture: '/assets/blog/authors/romannosov.png'
 ogImage:
-  url: '/assets/blog/sapui5-state-part2/background.jpg'
+  url: '/assets/blog/sapui5-state-part2/backgroundWithHeader.png'
 ---
 
 С концептом реактивности в *SAPUI5* немного разобрались. Осталось углубиться в эту тему чуть-чуть подробнее: 

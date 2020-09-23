@@ -1,15 +1,15 @@
 ---
 title: 'Как запилить реактивность на SAPUI5 -- часть 1'
-titleEnabled: true
+titleEnabled: false
 excerpt: 'Решил описать то, как можно удобно хранить состояния экранов (или всего приложения) внутри SAPUI5 и заниматься реактивностью (Почти как у больших и нормальных фреймворков)'
-coverImage: '/assets/blog/sapui5-state/cover2.jpg'
+coverImage: '/assets/blog/sapui5-state/cover2withHeader.png'
 date: '2020-06-15T14:15:07.322Z'
 issueId: '10'
 author:
   name: Roman A. Nosov
   picture: '/assets/blog/authors/romannosov.png'
 ogImage:
-  url: '/assets/blog/sapui5-state/cover2.jpg'
+  url: '/assets/blog/sapui5-state/cover2withHeader.png'
 ---
 
 Решил описать то, как можно удобно хранить состояния экранов (или всего приложения) внутри *SAPUI5* и делать реактивность (Почти как у больших и нормальных фреймворков).
