@@ -7,7 +7,7 @@ date: '2020-09-23T14:15:07.322Z'
 issueId: '14'
 author:
   name: Roman A. Nosov
-  picture: '/assets/blog/authors/romannosov.png'
+  picture: '/assets/blog/authors/nosov.jpeg'
 ogImage:
   url: '/assets/blog/banks-clients-fraud/background.jpg'
 ---

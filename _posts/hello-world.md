@@ -7,7 +7,7 @@ date: '2020-05-03T21:00:07.322Z'
 issueId: '1'
 author:
   name: Roman A. Nosov
-  picture: '/assets/blog/authors/romannosov.png'
+  picture: '/assets/blog/authors/nosov.jpeg'
 ogImage:
   url: '/assets/blog/hello-world/завтра_будет_лучше.jpg'
 ---

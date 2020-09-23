@@ -7,7 +7,7 @@ date: '2020-05-04T14:15:07.322Z'
 issueId: '2'
 author:
   name: Roman A. Nosov
-  picture: '/assets/blog/authors/romannosov.png'
+  picture: '/assets/blog/authors/nosov.jpeg'
 ogImage:
   url: '/assets/blog/issue-comments-github/cover.png'
 ---

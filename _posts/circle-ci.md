@@ -7,7 +7,7 @@ date: '2020-05-05T16:12:07.322Z'
 issueId: '7'
 author:
   name: Roman A. Nosov
-  picture: '/assets/blog/authors/romannosov.png'
+  picture: '/assets/blog/authors/nosov.jpeg'
 ogImage:
   url: '/assets/blog/circleci/cover.png'
 ---

@@ -7,7 +7,7 @@ date: '2020-06-07T14:15:07.322Z'
 issueId: '9'
 author:
   name: Roman A. Nosov
-  picture: '/assets/blog/authors/romannosov.png'
+  picture: '/assets/blog/authors/nosov.jpeg'
 ogImage:
   url: '/assets/blog/remote-workplace-linux/logo.jpg'
 ---

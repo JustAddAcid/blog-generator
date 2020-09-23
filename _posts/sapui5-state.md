@@ -7,7 +7,7 @@ date: '2020-06-15T14:15:07.322Z'
 issueId: '10'
 author:
   name: Roman A. Nosov
-  picture: '/assets/blog/authors/romannosov.png'
+  picture: '/assets/blog/authors/nosov.jpeg'
 ogImage:
   url: '/assets/blog/sapui5-state/cover2withHeader.png'
 ---

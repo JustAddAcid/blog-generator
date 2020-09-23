@@ -7,7 +7,7 @@ date: '%%CURRENT_DATE%%'
 issueId: '%%ISSUE_ID%%'
 author:
   name: Roman A. Nosov
-  picture: '/assets/blog/authors/romannosov.png'
+  picture: '/assets/blog/authors/nosov.jpeg'
 ogImage:
   url: '/assets/blog/%POST_NAME%/background.jpg'
 ---
