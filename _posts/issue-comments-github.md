@@ -7,7 +7,8 @@ date: '2020-05-04T14:15:07.322Z'
 issueId: '2'
 author:
   name: Roman A. Nosov
-  picture: '/assets/blog/authors/nosov.jpeg'
+  picture: 'https://avatars3.githubusercontent.com/u/21103635?s=120&v=4'
+  url: 'https://github.com/JustAddAcid'
 ogImage:
   url: '/assets/blog/issue-comments-github/cover.png'
 ---
