@@ -4,7 +4,7 @@ titleEnabled: false
 excerpt: 'Опять активизировались телефонные мошенники, обзванивающие клиентов Сбербанка. Они вполне могут атаковать ваших доверчивых близких.'
 coverImage: '/assets/blog/banks-clients-fraud/background.jpg'
 date: '2020-09-23T14:15:07.322Z'
-issueId: '%%ISSUE_ID%%'
+issueId: '14'
 author:
   name: Roman A. Nosov
   picture: '/assets/blog/authors/romannosov.png'
