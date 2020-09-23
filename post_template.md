@@ -3,7 +3,7 @@ title: 'TITLE'
 titleEnabled: false
 excerpt: 'SOME_TEXT'
 coverImage: '/assets/blog/%POST_NAME%/background.jpg'
-date: '2020-05-24T14:15:07.322Z'
+date: '%%CURRENT_DATE%%'
 issueId: '%%ISSUE_ID%%'
 author:
   name: Roman A. Nosov

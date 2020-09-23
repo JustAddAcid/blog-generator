@@ -7,7 +7,9 @@ const
     targetRepo = process.env.TARGET_REPO_NAME,
     postPrefix = 'https://nosoff.info/posts/',
     issueNotCreatedYet = '%%ISSUE_ID%%',
+    currentDateMask = '%%CURRENT_DATE%%',
     notCreatedRegExp = new RegExp(issueNotCreatedYet, 'g'),
+    currentDateMaskRegExp = new RegExp(currentDateMask, 'g'),
     postsDir = './_posts',
     password = process.env.GITHUB_PASS
 
@@ -42,7 +44,10 @@ const main = async () => {
     
         if (fileText.includes(issueNotCreatedYet)){
             const issueId = await createIssue(nameWithoutExtension),
-                  newText = fileText.replace(notCreatedRegExp, issueId)
+                  newText = fileText
+                    .replace(notCreatedRegExp, issueId)
+                    .replace(currentDateMaskRegExp, new Date().toJSON());
+
             fs.writeFileSync(filePath, newText);
         }
     
