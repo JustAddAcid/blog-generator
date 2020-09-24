@@ -117,7 +117,7 @@ xrandr --output HDMI-1 --set audio force-dvi
 
 И там были две очень интересные строки: (Естественно, этой информации не было в официальной инструкции. Потому что страдай.)
 
-![Скриншот с сайта](/assets/blog/authoritarian-tv-interfaces/screenshot.png)
+[![Скриншот с сайта](/assets/blog/authoritarian-tv-interfaces/screenshot.png)](/assets/blog/authoritarian-tv-interfaces/screenshot.png)
 
 Там есть разделение на *"Поддерживаемые форматы входного сигнала"* и *"Доступные разрешения при подключении к ПК"*. Так чем же они отличаются? 
 
