@@ -145,3 +145,5 @@ xrandr --output HDMI-1 --mode 1360x768_60.00
 А отсутствие родного разрешения экрана в списке "поддерживаемых" — это вообще отдельная шутка инженеров над пользователями. Но с ней можно мириться. 
 
 Всех благ
+
+<iframe frameborder="0" style="border:none;width:100%;height:180px;" width="100%" height="180" src="https://music.yandex.ru/iframe/#track/63801314/10183597">Слушайте <a href='https://music.yandex.ru/album/10183597/track/63801314'>Тоталитаризм</a> — <a href='https://music.yandex.ru/artist/8896777'>808hardcore</a> на Яндекс.Музыке</iframe>
