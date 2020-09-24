@@ -2,15 +2,15 @@
 title: 'Авторитарные замашки у проектировщиков интерфейсов TV'
 titleEnabled: false
 excerpt: 'Делюсь собственной болью использования LCD-телевизора в качестве монитора на карантине'
-coverImage: '/assets/blog/%%POST_NAME%%/background.jpg'
-date: '%%CURRENT_DATE%%'
-issueId: '%%ISSUE_ID%%'
+coverImage: '/assets/blog/authoritarian-tv-interfaces/background.jpg'
+date: '2020-09-24T13:20:05.316Z'
+issueId: '15'
 author:
   name: Roman A. Nosov
   picture: 'https://avatars3.githubusercontent.com/u/21103635?s=120&v=4'
   url: 'https://github.com/JustAddAcid'
 ogImage:
-  url: '/assets/blog/%%POST_NAME%%/background.jpg'
+  url: '/assets/blog/authoritarian-tv-interfaces/background.jpg'
 ---
 
 Минутка признания. Больше всего в этом мире я ненавижу "не отключаемые опции". Есть в этом что-то авторитарное. Когда создатель какой-либо системы играет в бога и заявляет: "Я просто знаю, что вот эта функция нужна будет всегда. И не отвертитесь! Будете жрать говно до конца!"
