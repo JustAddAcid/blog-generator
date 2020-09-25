@@ -2,15 +2,15 @@
 title: 'Авторесайз объединенных ячеек в EXCEL'
 titleEnabled: false
 excerpt: 'Так уж исторически сложилось, что часто по работе люди встречаются со "стандартными" формами в EXCEL, которые нужно автоматически масштабировать в зависимости от контента в ячейках'
-coverImage: '/assets/blog/%%POST_NAME%%/background.jpg'
-date: '%%CURRENT_DATE%%'
-issueId: '%%ISSUE_ID%%'
+coverImage: '/assets/blog/autoresize-excel-tables/background.jpg'
+date: '2020-09-25T18:08:48.775Z'
+issueId: '16'
 author:
   name: Roman A. Nosov
   picture: 'https://avatars3.githubusercontent.com/u/21103635?s=120&v=4'
   url: 'https://github.com/JustAddAcid'
 ogImage:
-  url: '/assets/blog/%%POST_NAME%%/background.jpg'
+  url: '/assets/blog/autoresize-excel-tables/background.jpg'
 ---
 
 Прежде чем перейти к сути, давайте на минуточку остановимся и осознаем всю степень сюрреализма, который творится в государственном документообороте. Подумайте над тем, что если вы отправляете государству какую-то распечанную *EXCEL* табличку на бумажке(потому что именно так требует закон), то на принимающей стороне есть **ОТДЕЛЬНЫЙ, МАТЬ ЕГО, ЧЕЛОВЕК**, который руками забивает эти данные куда-то себе в базу?
