@@ -5,6 +5,7 @@ import PrismAbap from 'prismjs/components/prism-abap'
 import PrismBash from 'prismjs/components/prism-bash'
 import PrismYaml from 'prismjs/components/prism-yaml'
 import PrismSQL  from 'prismjs/components/prism-sql'
+import PrismVB from 'prismjs/components/prism-visual-basic'
 
 import React from 'react'
 import markdownStyles from './markdown-styles.module.css'
