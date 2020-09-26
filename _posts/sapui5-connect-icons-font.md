@@ -2,15 +2,15 @@
 title: 'Подключаем сторонние шрифты с иконками к SAPUI5-приложению'
 titleEnabled: false
 excerpt: 'Разберем процесс на примере шрифта от fontawesome'
-coverImage: '/assets/blog/%%POST_NAME%%/background.jpg'
-date: '%%CURRENT_DATE%%'
-issueId: '%%ISSUE_ID%%'
+coverImage: '/assets/blog/sapui5-connect-icons-font/background.jpg'
+date: '2020-09-26T17:08:30.259Z'
+issueId: '17'
 author:
   name: Roman A. Nosov
   picture: 'https://avatars3.githubusercontent.com/u/21103635?s=120&v=4'
   url: 'https://github.com/JustAddAcid'
 ogImage:
-  url: '/assets/blog/%%POST_NAME%%/background.jpg'
+  url: '/assets/blog/sapui5-connect-icons-font/background.jpg'
 ---
 
 Привет, мои маленькие любители лёгкого *БДСМ*. В эфире передача "веселые истории с *SAPUI5*". И сегодня мы рассмотрим, какие шаги нужно проделать, чтобы подключить шрифт с нужными нам иконками, и использовать их при построении интерфейса. Тому що список стандартных иконок очень куцый, и иногда нужно добавить что-нибудь со стороны.
