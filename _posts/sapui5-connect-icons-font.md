@@ -113,23 +113,23 @@ ogImage:
     ```
    4. Где-нибудь в коде (например, при инициализации Component.js, и *желательно* в отдельном файле) добавляем нужные нам иконки в пул:
    ```JavaScript
-    	sap.ui.core.IconPool.addIcon("angry", "fa", "Font Awesome 5 Free", "f556");
-      sap.ui.core.IconPool.addIcon("gem", "fa", "Font Awesome 5 Free", "f3a5");
-      //...
+    sap.ui.core.IconPool.addIcon("angry", "fa", "Font Awesome 5 Free", "f556");
+    sap.ui.core.IconPool.addIcon("gem", "fa", "Font Awesome 5 Free", "f3a5");
+    //...
    ```
    (Названия иконок и их символьные коды можно [подсмотреть на сайте](https://fontawesome.com/icons/gem?style=regular).)
      
      5. Использовать иконки при декларации каких-нибудь элементов экрана:
    ```xml
     <Button text="Очень красивая кнопка"
-        icon="sap-icon://fa/gem">
+        icon="sap-icon://fa/gem" />
    ```
 
 ![Очень красивая кнопка](/assets/blog/sapui5-connect-icons-font/beautiful_button.jpg)
 
 Кстати, названия всех иконок и их кодов удобно лежат в файле **/scss/_variables.scss**. И они вполне пригодны для автоматической обработки. Ну а шо, а вдруг.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TeXk3RFy1rc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/TeXk3RFy1rc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ```scss
 // помимо других переменных, там содержатся $fa-var.* : code
@@ -146,8 +146,8 @@ $fa-var-app-store: \f36f;
 ```bash
 grep -o fa-var.* ./_variables.scss \
  | tr --delete \;\\ | awk -F': ' \
-    '{print "sap.ui.core.IconPool.addIcon(\""$1"\",\"fa\",\"Font Awesome 5 Free\", \""$2"\");"}' \
-    >> iconDefinition.js
+  '{print "sap.ui.core.IconPool.addIcon(\""$1"\",\"fa\",\"Font Awesome 5 Free\", \""$2"\");"}' \
+  >> iconDefinition.js
 ```
 
 Получим на выходе вот это:
