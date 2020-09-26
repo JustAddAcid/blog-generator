@@ -113,18 +113,18 @@ ogImage:
    src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
  ```
  4. Где-нибудь в коде (например, при инициализации Component.js, и *желательно* в отдельном файле) добавляем нужные нам иконки в пул:
-```JavaScript
+ ```JavaScript
  sap.ui.core.IconPool.addIcon("angry", "fa", "Font Awesome 5 Free", "f556");
  sap.ui.core.IconPool.addIcon("gem", "fa", "Font Awesome 5 Free", "f3a5");
  //...
-```
-(Названия иконок и их символьные коды можно [подсмотреть на сайте](https://fontawesome.com/icons/gem?style=regular).)
+ ```
+ (Названия иконок и их символьные коды можно [подсмотреть на сайте](https://fontawesome.com/icons/gem?style=regular).)
   
  5. Использовать иконки при декларации каких-нибудь элементов экрана:
-```xml
+ ```xml
  <Button text="Очень красивая кнопка"
      icon="sap-icon://fa/gem" />
-```
+ ```
 
 ![Очень красивая кнопка](/assets/blog/sapui5-connect-icons-font/beautiful_button.jpg)
 
