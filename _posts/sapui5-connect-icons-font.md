@@ -84,46 +84,47 @@ ogImage:
 
 Чтобы объявить шрифты из *fontawesome* нужно с каждым из его шрифтов провернуть следующее:
 
-1. **Лезем в css проекта**.
-   1. Если нет .css файлов — создаём и объявляем его в manifest.json.
-      Путь объявления в манифесте:
-      ```JavaScript
-      {
-        "sap.ui5": {
-          "resources": {
-            "css": [
-              {
-                "uri": "css/yourfilename.css"
-              }
-            ]
-          }
-        }
-      }
-      ```
-   2. **Смотрим в файл** fontawesome/%fontname%.css
-   3. **Копируем блок** **@font-face**, в *css* проекта. Который будет примерно следующим:
-    ```css
-    @font-face {
-      font-family: 'Font Awesome 5 Free';
-      font-style: normal;
-      font-weight: 900;
-      font-display: block;
-      src: url("../webfonts/fa-solid-900.eot");
-      src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
-    ```
-   4. Где-нибудь в коде (например, при инициализации Component.js, и *желательно* в отдельном файле) добавляем нужные нам иконки в пул:
+ **Лезем в css проекта**.
+
+ 1. Если нет .css файлов — создаём и объявляем его в manifest.json.
+   Путь объявления в манифесте:
    ```JavaScript
-    sap.ui.core.IconPool.addIcon("angry", "fa", "Font Awesome 5 Free", "f556");
-    sap.ui.core.IconPool.addIcon("gem", "fa", "Font Awesome 5 Free", "f3a5");
-    //...
+   {
+     "sap.ui5": {
+       "resources": {
+         "css": [
+           {
+             "uri": "css/yourfilename.css"
+           }
+         ]
+       }
+     }
+   }
    ```
-   (Названия иконок и их символьные коды можно [подсмотреть на сайте](https://fontawesome.com/icons/gem?style=regular).)
-     
-     5. Использовать иконки при декларации каких-нибудь элементов экрана:
-   ```xml
-    <Button text="Очень красивая кнопка"
-        icon="sap-icon://fa/gem" />
-   ```
+ 2. **Смотрим в файл** fontawesome/%fontname%.css
+ 3. **Копируем блок** **@font-face**, в *css* проекта. Который будет примерно следующим:
+ ```css
+ @font-face {
+   font-family: 'Font Awesome 5 Free';
+   font-style: normal;
+   font-weight: 900;
+   font-display: block;
+   src: url("../webfonts/fa-solid-900.eot");
+   src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+ ```
+ 4. Где-нибудь в коде (например, при инициализации Component.js, и *желательно* в отдельном файле) добавляем нужные нам иконки в пул:
+```JavaScript
+ sap.ui.core.IconPool.addIcon("angry", "fa", "Font Awesome 5 Free", "f556");
+ sap.ui.core.IconPool.addIcon("gem", "fa", "Font Awesome 5 Free", "f3a5");
+ //...
+```
+(Названия иконок и их символьные коды можно [подсмотреть на сайте](https://fontawesome.com/icons/gem?style=regular).)
+  
+ 5. Использовать иконки при декларации каких-нибудь элементов экрана:
+```xml
+ <Button text="Очень красивая кнопка"
+     icon="sap-icon://fa/gem" />
+```
 
 ![Очень красивая кнопка](/assets/blog/sapui5-connect-icons-font/beautiful_button.jpg)
 
