@@ -1,6 +1,5 @@
 import fs from 'fs'
 import fetch from 'node-fetch'
-import btoa from 'btoa'
 
 const
     githubUser = process.env.CIRCLE_USERNAME,
@@ -13,9 +12,9 @@ const
     currentDateMaskRegExp = new RegExp(currentDateMask, 'g'),
     postNameRegExp = new RegExp(postNameMask, 'g'),
     postsDir = './_posts',
-    password = process.env.GITHUB_PASS
+    githubToken = process.env.GITHUB_TOKEN;
 
-const basicAuthHeader = (username, password) => "Basic " + btoa(username + ":" + password)
+const tokenAuthHeader = () => "token " + githubToken;
 
 const createIssue = async name => {
     const url = `https://api.github.com/repos/${githubUser}/${targetRepo}/issues`
@@ -28,7 +27,7 @@ const createIssue = async name => {
         headers: {
             'Accept' : 'application/vnd.github.v3.html+json',
             'Content-Type': 'application/json',
-            'Authorization': basicAuthHeader(githubUser, password) 
+            'Authorization': tokenAuthHeader()
         }
     })
     const createdIssue = await response.json();
