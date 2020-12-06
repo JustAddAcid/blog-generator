@@ -68,7 +68,7 @@ export async function getStaticProps({ params }) {
   const hashTags = getHashtags(markdownContent);
   
   hashTags.forEach(tag => {
-    markdownContent = markdownContent.replace(`#${tag}`, `[${tag}](/tags/${tag})`)
+    markdownContent = markdownContent.replace(`#${tag}`, `[#${tag}](/tags/${tag})`)
   })
 
 
