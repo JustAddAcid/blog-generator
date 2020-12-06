@@ -2,12 +2,9 @@ import Container from '../../components/container'
 import Layout from '../../components/layout'
 import { getAllTagsWithPosts } from '../../lib/api'
 import Head from 'next/head'
-import Container from '../components/container'
-import MoreStories from '../components/more-stories'
-import HeroPost from '../components/hero-post'
-import Intro from '../components/intro'
-import Layout from '../components/layout'
-import Head from 'next/head'
+import MoreStories from '../../components/more-stories'
+import HeroPost from '../../components/hero-post'
+import Intro from '../../components/intro'
 
 export default function Index({ allPosts, tag }) {
     const heroPost = allPosts[0]
