@@ -36,7 +36,7 @@ const createIssue = async name => {
 
 const main = async () => {
 
-    const filesInDir = fs.readdirSync(postsDir)
+    const filesInDir = fs.readdirSync(postsDir).filter(path => /.*\.md/.test(path))
     
     for (const fileName of filesInDir){
         const filePath = postsDir + '/' + fileName,
