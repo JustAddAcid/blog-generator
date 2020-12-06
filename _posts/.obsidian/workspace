@@ -1,0 +1,96 @@
+{
+  "main": {
+    "id": "a232a84315181ef0",
+    "type": "split",
+    "children": [
+      {
+        "id": "07d3f627a3fb6be8",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8958e713a8bc2f85",
+    "type": "split",
+    "children": [
+      {
+        "id": "c17a4fe95db3c08f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "258cce2fcbf1ad48",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "5a525968a34bd65e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4602a0125b29e91a",
+    "type": "split",
+    "children": [
+      {
+        "id": "27fe1cb31258a5fb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0bf906cf84eb5f5e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "zcl-date-abap.md",
+    "sapui5-state-part2.md",
+    "sapui5-connect-icons-font.md",
+    "sapui5-state.md",
+    "remote-workplace-linux.md",
+    "issue-comments-github.md",
+    "hello-world.md",
+    "exporting_data_form_osm.md",
+    "domain_where_used_list.md",
+    "circle-ci.md"
+  ]
+}

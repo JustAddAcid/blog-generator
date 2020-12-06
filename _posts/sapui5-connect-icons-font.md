@@ -168,3 +168,5 @@ sap.ui.core.IconPool.addIcon("fa-var-adobe","fa","Font Awesome 5 Free", "f778");
 На этом всё. Работает. 
 
 P.S. При тестировании внутри **SAP WEB IDE** на **Internet Explorer** могут наблюдаться фантомные проблемы с отображением иконок. Но после деплоя — всё работает.
+
+#javascript #sapui5 

@@ -290,3 +290,4 @@ lv_formated = lo_date->to_string( 'Месяц: $m Год: $yyyy День: $dd' )
 write lv_formated. " Месяц: Январь Год: 2020 День: 01
 ```
 
+#abap 
