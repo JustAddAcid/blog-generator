@@ -36,25 +36,24 @@ export default function Index({ allPosts, tag }) {
 }
 
 export async function getStaticProps({ params }) {
-
-    const posts = params.posts;
-    posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    const tagsMap = getAllTagsWithPosts()
+    const posts = tagsMap[params.tag]
+    posts.sort((a, b) => new Date(b.date) - new Date(a.date))
 
     return {
-        props: { posts, tag: params.tag },
+        props: { allPosts: posts, tag: params.tag },
     }
 }
 
 export async function getStaticPaths() {
     const tagsMap = getAllTagsWithPosts()
     const tags = Object.keys(tagsMap)
-
+    console.log(tags)
     return {
         paths: tags.map(tag => {
             return {
                 params: {
                     tag,
-                    posts: tagsMap[tag]
                 },
             }
         }),
