@@ -5,7 +5,7 @@ import PostBody from '../../components/post-body'
 import Header from '../../components/header'
 import PostHeader from '../../components/post-header'
 import Layout from '../../components/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
+import { getPostBySlug, getAllPosts, getHashtags } from '../../lib/api'
 import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 // import { CMS_NAME } from '../../lib/constants'
@@ -64,7 +64,15 @@ export async function getStaticProps({ params }) {
     'coverImage',
     'issueId'
   ])
-  const content = await markdownToHtml(post.content || '')
+  let markdownContent = post.content || ''
+  const hashTags = getHashtags(markdownContent);
+  
+  hashTags.forEach(tag => {
+    markdownContent = markdownContent.replace(`#${tag}`, `[${tag}](/tags/${tag})`)
+  })
+
+
+  const content = await markdownToHtml(markdownContent)
 
   return {
     props: {

@@ -63,7 +63,7 @@ xfreerdp /v:targetUrl /d:domain /u:username /p:password /g:gateway /gd:domain /g
 Всё это можно сохранить в текстовом файле, сделать его исполняемым и положить для удобства на рабочий стол.
 
 ```bash
-sudo chmod +x filename #Сделать исполняемым
+sudo chmod +x filename # Сделать исполняемым
 ```
 
 ### Skype for business (lync)
