@@ -18,7 +18,7 @@ ogImage:
 1. Разобраться с тем, что же такое *expression binding* и с чем его едят
 2. А также ответить на вопрос — как подписываться на изменение *viewState* и выполнять по этому событию какой-либо код. 
 
-![Добра поешь](/assets/blog/sapui5-state-part2/добра%20поешь.png)
+![Добра поешь](../public/assets/blog/sapui5-state-part2/добра%20поешь.png)
 
 ## Что же такое expression binding и с чем его едят
 
@@ -76,8 +76,8 @@ ogImage:
 
 Допустим, нам требуется выпадающее меню вот с таким поведением: при нажатии на toggleButton должна меняться иконка и открываться дочерняя ветка меню. Как это сделать, почти не прибегая к *javaScript*?
 
-![menu closed](/assets/blog/sapui5-state-part2/menu%20closed.png)
-![menu opened](/assets/blog/sapui5-state-part2/menu%20opened.png)
+![menu closed](../public/assets/blog/sapui5-state-part2/menu%20closed.png)
+![menu opened](../public/assets/blog/sapui5-state-part2/menu%20opened.png)
 
 Очень просто: использовать для иконок тренарный оператор, который будет вычислять нужную нам иконку. А "дочернюю" ветку меню заключить в блок, который делать видимым тогда, когда свойство TransportEnabled в модели будет = true.
 
@@ -106,8 +106,8 @@ ogImage:
 
 Допустим, мы захотели написать простой калькулятор на *sapui5*. Как нам организовать блокировку кнопки "decimal point", когда точка уже введена пользователем? 
 
-![calc before](/assets/blog/sapui5-state-part2/calc%20before.png)
-![calc after](/assets/blog/sapui5-state-part2/calc%20after.png)
+![calc before](../public/assets/blog/sapui5-state-part2/calc%20before.png)
+![calc after](../public/assets/blog/sapui5-state-part2/calc%20after.png)
 
 *Не сильно заметно, но на втором скрине кнопка с точкой заблокирована*
 
@@ -160,7 +160,7 @@ ogImage:
 
 Готово! При нажатии на m+ получаем вот такое сообщение:
 
-![Calc handler](/assets/blog/sapui5-state-part2/calc_handler.jpg)
+![Calc handler](../public/assets/blog/sapui5-state-part2/calc_handler.jpg)
 
 Как всегда, код примера [вот здесь](https://github.com/JustAddAcid/sapui5-calculator)
 

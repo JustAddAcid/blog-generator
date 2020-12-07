@@ -71,6 +71,7 @@ export async function getStaticProps({ params }) {
     markdownContent = markdownContent.replace(`#${tag}`, `[#${tag}](/tags/${tag})`)
   })
 
+  markdownContent = markdownContent.replace(/\.\.\/public\//g, '../')
 
   const content = await markdownToHtml(markdownContent)
 

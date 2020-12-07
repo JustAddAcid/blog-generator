@@ -19,7 +19,7 @@ ogImage:
 
 **Первый** — найти нормальную работу, и не маяться ерундой.
 
-![Нормальная работа](/assets/blog/sapui5-connect-icons-font/work_meme.jpg)
+![Нормальная работа](../public/assets/blog/sapui5-connect-icons-font/work_meme.jpg)
 
 **Второй** (сложнее, но не сильно) — описан ниже.
 
@@ -62,7 +62,7 @@ ogImage:
 
 Зачем я это написал? Непонятно, т.к. в этой информации нет ничего полезного. 
 
-![Для общего развития](/assets/blog/sapui5-connect-icons-font/для%20общего%20развития.jpg)
+![Для общего развития](../public/assets/blog/sapui5-connect-icons-font/для%20общего%20развития.jpg)
 
 Первым делом делаем что? Праавильно! [Лезем в доку](https://help.sap.com/saphelp_uiaddon10/helpdata/en/21/ea0ea94614480d9a910b2e93431291/content.htm?no_cache=true), где индусским по белому написано, что для использования кастомных шрифтов иконок нужно сделать несколько очень простых телодвижений:
 
@@ -126,7 +126,7 @@ ogImage:
      icon="sap-icon://fa/gem" />
  ```
 
-![Очень красивая кнопка](/assets/blog/sapui5-connect-icons-font/beautiful_button.jpg)
+![Очень красивая кнопка](../public/assets/blog/sapui5-connect-icons-font/beautiful_button.jpg)
 
 Кстати, названия всех иконок и их кодов удобно лежат в файле **/scss/_variables.scss**. И они вполне пригодны для автоматической обработки. Ну а шо, а вдруг.
 
@@ -163,7 +163,7 @@ sap.ui.core.IconPool.addIcon("fa-var-adobe","fa","Font Awesome 5 Free", "f778");
 
 Целый лонгрид о подключении шрифта... Ух.
 
-![Деградация](/assets/blog/sapui5-connect-icons-font/деградация.jpg)
+![Деградация](../public/assets/blog/sapui5-connect-icons-font/деградация.jpg)
 
 На этом всё. Работает. 
 

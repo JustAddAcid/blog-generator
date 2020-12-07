@@ -25,7 +25,7 @@ ogImage:
 2. Нужна возможность созваниваться по skype for business с коллегами без огромных задержек от RDP. В идеале — запуск клиента на локальной машине.
 
 ## Добываем себе возможность работать в трусах
-![Удалёнка](/assets/blog/remote-workplace-linux/meme.jpg)
+![Удалёнка](../public/assets/blog/remote-workplace-linux/meme.jpg)
 
 
 ### RDP
@@ -79,7 +79,7 @@ sudo apt install pidgin pidgin-sipe
 ```
 
 При создании учетных записей выбираем протокол "Office Communicator"
-![Pidgin protocols list](/assets/blog/remote-workplace-linux/pidgin-protocols.png)
+![Pidgin protocols list](../public/assets/blog/remote-workplace-linux/pidgin-protocols.png)
 
 Вводим active directory login/e-mail/пароль. И вуаля! Подключается и работает.
 

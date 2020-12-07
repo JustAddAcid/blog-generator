@@ -8,8 +8,11 @@
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "authoritarian-tv-interfaces.md",
+            "mode": "preview"
+          }
         }
       }
     ],
@@ -37,16 +40,17 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#танцы_с_бубном",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -66,15 +70,35 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "authoritarian-tv-interfaces.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "5f4411e5b30e720e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {}
+            }
+          },
+          {
+            "id": "548304d14ab2f8ba",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "authoritarian-tv-interfaces.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -82,15 +106,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "authoritarian-tv-interfaces.md",
+    "remote-workplace-linux.md",
     "zcl-date-abap.md",
     "sapui5-state-part2.md",
     "sapui5-connect-icons-font.md",
     "sapui5-state.md",
-    "remote-workplace-linux.md",
     "issue-comments-github.md",
     "hello-world.md",
     "exporting_data_form_osm.md",
-    "domain_where_used_list.md",
-    "circle-ci.md"
+    "domain_where_used_list.md"
   ]
 }
