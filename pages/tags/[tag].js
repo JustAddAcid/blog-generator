@@ -16,7 +16,7 @@ export default function Index({ allPosts, tag }) {
                     <title>Nosoff.info #{tag}</title>
                 </Head>
                 <Container >
-                    <Intro tag={'#' + tag} />
+                    <Intro tag={`#${tag}`} />
                     {heroPost && (
                         <HeroPost
                             title={heroPost.title}
