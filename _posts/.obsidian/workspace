@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "530475fa41f2bb5c",
+        "id": "8953894756f0c425",
         "type": "leaf",
         "active": true,
         "state": {
@@ -107,15 +107,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "Untitled.md",
-    "templates/Untitled.md",
+    "templates/zettelcasten_template.md",
     "templates/post_template.md",
+    "templates/Untitled.md",
+    "Untitled.md",
     "zettelkasten/202012071529.md",
     "everyday/2020-12-07.md",
     "authoritarian-tv-interfaces.md",
     "issue-comments-github.md",
     "hello-world.md",
-    "remote-workplace-linux.md",
-    "zcl-date-abap.md"
+    "remote-workplace-linux.md"
   ]
 }
