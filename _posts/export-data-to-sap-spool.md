@@ -2,15 +2,15 @@
 title: 'Экспорт данных из SAP Query-отчета во внутреннюю таблицу через SPOOL'
 titleEnabled: false
 excerpt: 'Объясняю необычный подход экспорта данных из отчетов SAP Query, которые отрисовывают данные через Report Painter. Через... Спул печати!'
-coverImage: '/assets/blog/%%POST_NAME%%/background.jpg'
-date: '%%CURRENT_DATE%%'
-issueId: '%%ISSUE_ID%%'
+coverImage: '/assets/blog/export-data-to-sap-spool/background.jpg'
+date: '2021-03-20T08:40:14.217Z'
+issueId: '18'
 author:
   name: Roman A. Nosov
   picture: 'https://avatars3.githubusercontent.com/u/21103635?s=120&v=4'
   url: 'https://github.com/JustAddAcid'
 ogImage:
-  url: '/assets/blog/%%POST_NAME%%/background.jpg'
+  url: '/assets/blog/export-data-to-sap-spool/background.jpg'
 ---
 
 Господа, м'сье абапье и прочие любители подглядывать за страданиями! Представляю вашему вниманию очередной результат танцев с бубенцами. Который в этот раз будет чуть менее бесполезным. И (быть может) сэкономит время какому-нибудь заблудившемуся **SAP**-кодерасту.
