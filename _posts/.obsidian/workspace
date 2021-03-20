@@ -4,12 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "8953894756f0c425",
+        "id": "bfd31a78fd00abac",
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "export-data-to-sap-spool.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -74,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "export-data-to-sap-spool.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,7 +91,10 @@
             "type": "leaf",
             "state": {
               "type": "tag",
-              "state": {}
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
             }
           },
           {
@@ -95,7 +102,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "export-data-to-sap-spool.md"
+              }
             }
           }
         ],
@@ -107,15 +116,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "export-data-to-sap-spool.md",
+    "exporting_data_form_osm.md",
+    "zcl-date-abap.md",
+    "domain_where_used_list.md",
+    "authoritarian-tv-interfaces.md",
     "templates/zettelcasten_template.md",
     "templates/post_template.md",
     "templates/Untitled.md",
     "Untitled.md",
-    "zettelkasten/202012071529.md",
-    "everyday/2020-12-07.md",
-    "authoritarian-tv-interfaces.md",
-    "issue-comments-github.md",
-    "hello-world.md",
-    "remote-workplace-linux.md"
+    "zettelkasten/202012071529.md"
   ]
 }
