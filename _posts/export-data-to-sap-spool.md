@@ -143,3 +143,5 @@ CALL FUNCTION 'RSPO_RETURN_ABAP_SPOOLJOB'
 Полный код на github gists: https://gist.github.com/JustAddAcid/450d4cd5f1069dbac61c3e842508b969
 
 <iframe frameborder="0" style="border:none;width:100%;height:180px;" width="100%" height="180" src="https://music.yandex.ru/iframe/#track/57987781/8763763">Слушайте <a href='https://music.yandex.ru/album/8763763/track/57987781'>What the Fuck</a> — <a href='https://music.yandex.ru/artist/7756103'>RHODAMINE</a> на Яндекс.Музыке</iframe>
+
+#abap #танцы_с_бубном
