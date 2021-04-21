@@ -14,6 +14,7 @@ ogImage:
 ---
 
 На случай внезапного появления новой информации, весь контент будет на канале в телеграме:
+
 (Возможно, стоит отключить адблокер, чтобы сообщения подгрузились)
 
 <script async src="https://telegram.org/js/telegram-widget.js?14" data-telegram-post="nosoff_channel/45" data-width="100%"></script>
