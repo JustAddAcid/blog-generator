@@ -2,15 +2,15 @@
 title: 'Слив данных из базы ФБК'
 titleEnabled: false
 excerpt: 'Внезапно на почтовые ящики организаций начали приходить рассылки от товарищмайора'
-coverImage: '/assets/blog/%%POST_NAME%%/background.png'
-date: '%%CURRENT_DATE%%'
-issueId: '%%ISSUE_ID%%'
+coverImage: '/assets/blog/fbk_deanon/background.png'
+date: '2021-04-21T06:24:34.270Z'
+issueId: '20'
 author:
   name: Roman A. Nosov
   picture: 'https://avatars3.githubusercontent.com/u/21103635?s=120&v=4'
   url: 'https://github.com/JustAddAcid'
 ogImage:
-  url: '/assets/blog/%%POST_NAME%%/background.png'
+  url: '/assets/blog/fbk_deanon/background.png'
 ---
 
 На случай внезапного появления новой информации, весь контент будет на канале в телеграме:
