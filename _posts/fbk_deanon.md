@@ -17,12 +17,4 @@ ogImage:
 
 (Возможно, стоит отключить адблокер, чтобы сообщения подгрузились)
 
-<script async src="https://telegram.org/js/telegram-widget.js?14" data-telegram-post="nosoff_channel/45" data-width="100%" data-userpic="true" data-color="343638" data-dark-color="FFFFFF"></script>
-
-<script>
-setTimeout(function(){
-  if (!document.querySelector('#telegram-post-nosoff_channel-45')){
-    document.location.reload();
-  }
-},200);
-</script>
+<iframe id="telegram-post-nosoff_channel-45" src="https://t.me/nosoff_channel/45?embed=1&userpic=true&color=343638&dark_color=FFFFFF" width="100%" height="" frameborder="0" scrolling="no" style="overflow: hidden; border: none; min-width: 320px; height: 865px;"></iframe>
