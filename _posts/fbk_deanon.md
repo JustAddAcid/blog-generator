@@ -18,3 +18,8 @@ ogImage:
 (Возможно, стоит отключить адблокер, чтобы сообщения подгрузились)
 
 <iframe id="telegram-post-nosoff_channel-45" src="https://t.me/nosoff_channel/45?embed=1&userpic=true&color=343638&dark_color=FFFFFF" width="100%" height="" frameborder="0" scrolling="no" style="overflow: hidden; border: none; min-width: 320px; height: 865px;"></iframe>
+
+Немного инфы от роскомсвободы по ситуации с шатдаунами интернета и отключениями онлайновых камер городов:
+https://roskomsvoboda.org/post/hronika-cifrovyh-ogranicheniy/
+
+Неожиданно интересный проект. Такой себе mesh-vpn который надо посмотреть на досуге поближе: https://habr.com/ru/company/vdsina/blog/509382/
