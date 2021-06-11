@@ -115,6 +115,7 @@
         "nickname",
         "nosoff",
         "pfifo",
+        "picture",
         "production",
         "qdisc",
         "qlen",
