@@ -115,7 +115,7 @@ ip addr show
 ![Исключение защитника](../public/assets/blog/hamachi-on-chromebooks/exceptions_microsoft_guard.png)
 
 * Запустил install-скрипт
-* Погасил сервер
+* Погасил сервис
 * Заменил ini-файл [на тот, что здесь](https://raw.githubusercontent.com/affinityv/INI-RDPWRAP/master/rdpwrap.ini).
 * Запустил сервис
 
