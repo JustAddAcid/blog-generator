@@ -137,3 +137,5 @@ net start termservice
 К остальным поднятым сервисам можно будет "достучаться" также, как если бы компьютеры были в локальной сети. ¯\\_(ツ)_/¯
 
 <iframe frameborder="0" style="border:none;width:100%;height:180px;" width="100%" height="180" src="https://music.yandex.ru/iframe/#track/76128507/13437222">Слушайте <a href='https://music.yandex.ru/album/13437222/track/76128507'>Веснянка</a> — <a href='https://music.yandex.ru/artist/4827898'>Go_A</a> на Яндекс.Музыке</iframe>
+
+#linux #танцы_с_бубном #vpn

@@ -26,3 +26,5 @@ ogImage:
 [Немного инфы от роскомсвободы по ситуации с шатдаунами интернета и отключениями онлайновых камер городов](https://roskomsvoboda.org/post/hronika-cifrovyh-ogranicheniy/)
 
 [Неожиданно интересный проект. Такой себе mesh-vpn который надо посмотреть на досуге поближе](https://habr.com/ru/company/vdsina/blog/509382/)
+
+#болтология
