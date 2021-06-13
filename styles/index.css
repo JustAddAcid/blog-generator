@@ -2,7 +2,8 @@
 
 @tailwind base;
 @tailwind components;
-ol {
+
+/* ol {
     list-style: decimal !important;
     margin-left: 25px;
 }
@@ -10,7 +11,7 @@ ol {
 ul {
     list-style: disc !important;
     margin-left: 25px;
-}
+} */
 
 .comment-card blockquote {
     padding-left: 1em;
