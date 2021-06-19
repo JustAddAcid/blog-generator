@@ -2,15 +2,15 @@
 title: 'Сбор и автоматическая фильтрация вложений диалога VK'
 titleEnabled: true
 excerpt: 'История о том, как я через VK-API вытягивал изображения из вложений, а затем отделял фотографии от мемов'
-coverImage: '/assets/blog/%%POST_NAME%%/background.jpg'
-date: '%%CURRENT_DATE%%'
-issueId: '%%ISSUE_ID%%'
+coverImage: '/assets/blog/get-all-photos-from-chat-vk/background.jpg'
+date: '2021-06-19T12:05:26.774Z'
+issueId: '22'
 author:
   name: Roman A. Nosov
   picture: 'https://avatars3.githubusercontent.com/u/21103635?s=120&v=4'
   url: 'https://github.com/JustAddAcid'
 ogImage:
-  url: '/assets/blog/%%POST_NAME%%/background.jpg'
+  url: '/assets/blog/get-all-photos-from-chat-vk/background.jpg'
 ---
 
 Удаляться из соцсетей всегда немного жалко. Особенно, когда годами использовал некоторые чаты просто как хостинг фотографий. Так что, мною было принято ответственное решение выкачать все *несколько-гигабайт* изображений из таких чатов и, естественно, удалить из них мусорные мемы *(хотя есть смысл их хранить где-то отдельно)*
