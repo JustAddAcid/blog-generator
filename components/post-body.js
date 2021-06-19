@@ -7,6 +7,7 @@ import PrismYaml from 'prismjs/components/prism-yaml'
 import PrismSQL  from 'prismjs/components/prism-sql'
 import PrismVB from 'prismjs/components/prism-visual-basic'
 import PrismSCSS from 'prismjs/components/prism-scss'
+import PrismPython from 'prismjs/components/prism-python'
 
 import React from 'react'
 import markdownStyles from './markdown-styles.module.css'
