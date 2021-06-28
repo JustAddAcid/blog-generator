@@ -1,1 +1,1 @@
-Static site generator for nosoff.info
+Static site generator using Next.js for https://nosoff.info
