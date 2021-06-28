@@ -1,1 +1,1 @@
-## hello
+Static site generator for nosoff.info
