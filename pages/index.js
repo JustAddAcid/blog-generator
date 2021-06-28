@@ -14,8 +14,6 @@ export default function Index({ allPosts }) {
       <Layout>
         <Head>
           <title>Nosoff.info</title>
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-8MHXSDEJKL"></script>
-          <script src="/assets/additional_scripts.js"></script>
         </Head>
         <Container>
           <Intro />
