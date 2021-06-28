@@ -44,7 +44,7 @@ export async function getStaticProps() {
     'author',
     'coverImage',
     'excerpt',
-  ]).sort((a,b) => new Date(b.date) - new Date(a.date));
+  ]).sort((a, b) => new Date(b.date) - new Date(a.date));
 
   return {
     props: { allPosts },
