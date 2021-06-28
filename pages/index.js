@@ -14,6 +14,8 @@ export default function Index({ allPosts }) {
       <Layout>
         <Head>
           <title>Nosoff.info</title>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-8MHXSDEJKL"></script>
+          <script src="/assets/additional_scripts.js"></script>
         </Head>
         <Container>
           <Intro />
@@ -44,7 +46,7 @@ export async function getStaticProps() {
     'author',
     'coverImage',
     'excerpt',
-  ]).sort((a,b) => new Date(b.date) - new Date(a.date));
+  ]).sort((a, b) => new Date(b.date) - new Date(a.date));
 
   return {
     props: { allPosts },
